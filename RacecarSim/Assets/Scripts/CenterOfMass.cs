@@ -11,8 +11,28 @@ public class CenterOfMass : MonoBehaviour
     [SerializeField]
     private Vector3 Com = Vector3.zero;
 
+    public float gizmoSize = 0.2f;
+
+    private Rigidbody body;
+
     void Start()
     {
-        this.GetComponent<Rigidbody>().centerOfMass = this.Com;
+        body = this.GetComponent<Rigidbody>();
+    }
+    void Update()
+    {
+        if (body != null)
+            body.centerOfMass = this.Com;
+    }
+    
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.matrix = transform.localToWorldMatrix;
+
+        if (gizmoSize > 0)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawSphere(Com, gizmoSize);
+        }
     }
 }

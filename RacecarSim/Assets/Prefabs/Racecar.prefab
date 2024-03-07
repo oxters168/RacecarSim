@@ -335,7 +335,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -405,7 +405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd4ddcf37f89d84299afda4ca59c216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Com: {x: 0, y: -0.1, z: -0.2}
+  Com: {x: 0, y: 0.6, z: 0}
+  gizmoSize: 0.2
 --- !u!114 &4076662366558571558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,24 +434,25 @@ MonoBehaviour:
   maxSteeringAngle: 35
   minSteeringAngle: 20
   wheels:
-  - power: 0
+  - power: 1
     steer: 1
     handbrake: 0
     wheelUAPI: {fileID: 6229556607819638443}
-  - power: 0
+  - power: 1
     steer: 1
     handbrake: 0
     wheelUAPI: {fileID: 8266983483332810571}
   - power: 1
     steer: 0
-    handbrake: 1
+    handbrake: 0
     wheelUAPI: {fileID: 8867914431872612643}
   - power: 1
     steer: 0
-    handbrake: 1
+    handbrake: 0
     wheelUAPI: {fileID: 7938098280199676730}
   driveAxis: 0
   steerAxis: 0
+  handbrakeToggle: 0
 --- !u!1 &1304687792548701723
 GameObject:
   m_ObjectHideFlags: 0
