@@ -137,13 +137,13 @@ namespace NWH.WheelController3D
                     wc.BrakeTorque = maxBrakeTorque;
                 }
 
-                if (SpeedSigned < -0.4f && yAxis > 0.1f || SpeedSigned > 0.4f && yAxis < -0.1f)
+                if ((SpeedSigned < -0.4f && yAxis > 0.1f) || (SpeedSigned > 0.4f && yAxis < -0.1f))
                 {
                     wc.BrakeTorque = maxBrakeTorque * Mathf.Abs(yAxis);
                 }
 
                 if (w.power && 
-                    SpeedSigned >= -0.5f && yAxis > 0.1f || SpeedSigned <= 0.5f && yAxis < -0.1f)
+                    (SpeedSigned >= -0.5f && yAxis > 0.1f || SpeedSigned <= 0.5f && yAxis < -0.1f))
                 {
                     wc.MotorTorque = maxMotorTorque * yAxis;
                 }
