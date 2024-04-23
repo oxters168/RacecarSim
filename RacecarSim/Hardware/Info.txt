@@ -1,1 +1,12 @@
-List of Components
+List of Hardware Components of the Car
+Will be updated soon with specific details about each componenet
+1. Gens Ace 5000mAh 3S1P 11.1V 50C Lipo Battery Pack With XT60 Plug
+2. Lidar
+3. RGB Camera
+4. Jetson
+5. Receiver
+6. ESC
+7. Mux
+8. Maestro
+9. Throttle
+10. Link Port
