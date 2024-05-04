@@ -1,12 +1,20 @@
 List of Hardware Components of the Car
-Will be updated soon with specific details about each componenet
 1. Gens Ace 5000mAh 3S1P 11.1V 50C Lipo Battery Pack With XT60 Plug
-2. Lidar
-3. RGB Camera
-4. Jetson
-5. Receiver
-6. ESC
-7. Mux
-8. Maestro
-9. Throttle
-10. Link Port
+
+2. YDLIDAR X4 Pro 360 Degree, 2D Laser Range Lidar Scanner
+
+3. Arducam IMX219 Wide Angle Camera Module for NVIDIA Jetson Nano
+
+4. Jetson Xavier NX
+
+5. Turnigy 2.4 GHz 9x8C VZ 8CH Full Range Receiver 
+
+6. ESC Castle Link Mamba Monster 2
+
+7. 8-Channel-Mux Analog Multiplexer Selector Module
+
+8. Polulu Micro Maestro 6-Channel USB Servo Controller
+
+9. Brushless Motor
+
+10. CC BEC PRO 20A Max Output, 12S Max Input Switching Regulator
